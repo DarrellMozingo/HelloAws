@@ -10,7 +10,7 @@ task deploy {
 #  $app_ref = ($outputs | where { $_.OutputKey -eq "ApplicationRef" }).OutputValue
 #  $env_ref = ($outputs | where { $_.OutputKey -eq "EnvironmentRef" }).OutputValue
   $app_ref = "My First Elastic Beanstalk Application"
-  $env_ref = "Default-Environment"
+  $env_ref = "e-kkypuwhi2u"
   echo "Template = ElasticBeanstalk" > config_for_aws_deploy_command
   echo "Deploying to BeanStalk application '$app_ref', environment '$env_ref'"
 
