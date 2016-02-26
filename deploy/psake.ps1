@@ -1,8 +1,5 @@
 param(
   [Parameter(Mandatory=1)]
-  [string]$target_beanstalk_stack,
-
-  [Parameter(Mandatory=1)]
   [string]$aws_deploy_key,
 
   [Parameter(Mandatory=1)]
