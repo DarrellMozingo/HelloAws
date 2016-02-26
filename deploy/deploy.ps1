@@ -44,8 +44,8 @@ task deploy {
     /DAWSSecretKey=$aws_deploy_secret `
     /DRegion=$aws_region `
     /DUploadBucket=elasticbeanstalk-$aws_region-$aws_account_number `
-    /DApplication.Name=$app_ref `
-    /DEnvironment.Name=$env_ref `
+    /DApplication.Name="$app_ref" `
+    /DEnvironment.Name="$env_ref" `
     /DApplication.Version=$app_ver `
     /DDeploymentPackage=aws-package.zip `
     config_for_aws_deploy_command }
