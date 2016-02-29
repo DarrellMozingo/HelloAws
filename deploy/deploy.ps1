@@ -2,8 +2,8 @@ task default -depends deploy
 
 task deploy {
 #  echo "Getting AWS BeanStalk properties..."
-#  import-module awspowershell
-#  set-awscredentials -accesskey $aws_deploy_key -secretkey $aws_deploy_secret
+  import-module awspowershell
+  set-awscredentials -accesskey $aws_deploy_key -secretkey $aws_deploy_secret
 #  $outputs = (get-cfnstack -stackname $target_beanstalk_stack -region $aws_region).Outputs
 #  $app_ref = ($outputs | where { $_.OutputKey -eq "ApplicationRef" }).OutputValue
 #  $env_ref = ($outputs | where { $_.OutputKey -eq "EnvironmentRef" }).OutputValue
