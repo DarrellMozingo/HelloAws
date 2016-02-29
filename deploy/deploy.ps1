@@ -1,8 +1,6 @@
 task default -depends deploy
 
 task deploy {
-  cd ..
-
 #  echo "Getting AWS BeanStalk properties..."
 #  import-module awspowershell
 #  set-awscredentials -accesskey $aws_deploy_key -secretkey $aws_deploy_secret
